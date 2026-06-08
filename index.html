@@ -1,164 +1,181 @@
 <!DOCTYPE html>
-<html lange="pt-BR"
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOGuaíra</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: rgb(70, 191, 151);
+            color: rgb(147, 53, 66);
+            margin: 0;
+            padding: 0;
+        }
 
-    <meta charset="UTF-8"><head>
-    <meta name="viewport"     content="width=device-width, initial-scale=1.0"
+        header {
+            background: #333;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+         
+        header h2 {
+            margin: 10px 0;
+            font-family: Georgia, serif;
+            color: #ffffff; /* Ajustado para branco para dar contraste com o fundo escuro */
+        }
 
-<title>ECOGuaíra</title>
-<style>
+        header h3 {
+            margin: 0;
+            font-family: Georgia, serif;
+            background: rgb(14, 151, 105);
+            padding: 0.5rem;
+            display: inline-block;
+            border-radius: 4px;
+        }
+         
+        header p {
+            color: rgb(152, 17, 10);
+        }
 
-body {
-   font-family: Georgia, serif;
-   background-color: rgb(70, 191, 151);
-   color:rgb(147, 53, 66)
-}
+        nav {
+            margin-bottom: 1.5rem;
+        }
 
-header{
-    background: #333;
-    color: white;
-    padding: 2rem;
-    text-align: center;
-}
- 
-header h2{
-    margin: 5;
-    font-family: Georgia, serif;
-    color: #000000;
-}
+        nav a {
+            color: #c6e8c9;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            display: inline-block;
+        }
+         
+        nav a:hover {
+            background: #3e3e3e;
+            color: #ffffff;
+        }
 
-header h3{
-   margin: 0;
-   font: Georgia, serif;
-   background:rgb(14, 151, 105)
-   }
-    
-   header p {
-    color: rgb(152, 17, 10);
-   }
+        main {
+            max-width: 860px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
 
-   nav a {
-    color: #c6e8c9;
-    text-decoration: none;
-    padding: 0.75rem 1.5rem;
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
 
-   }
- 
-   nav a:hover {
-      background: #3e3e3e;
-      color: #000000
-   }
+        .card h2, .card h3, .card h5 {
+            color: #333;
+            margin-top: 0;
+        }
 
-   main {
-     max-width: 860px;
-     margin: 2rem auto;
-     padding: 0 1.5rem;
-   }
-   
-   .card img {
-       width: 120px;
-       height: 90px;
-       object-fit: cover;
-       border-radius: 6;
-       flex-shrink: 0;
-   }
+        .card-content {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+         
+        .card img {
+            width: 120px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 6px;
+            flex-shrink: 0;
+        }
 
- .card p {
-    font-size: 0.92rem;
-    line-height: 1.65;
-    color: #333;
-    margin: 0%;
+        .card p {
+            font-size: 0.92rem;
+            line-height: 1.65;
+            color: #333;
+            margin: 0;
+        }
 
-}
-
-footer{
-    text-align: center;
-    padding: 2rem;
-    background: #000000;
-    color: aliceblue;
-    margin-top: 3rem;
-}
-
-</style>
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #000000;
+            color: aliceblue;
+            margin-top: 3rem;
+        }
+    </style>
 </head>
 <body>
+
     <header>
+        <nav>
+            <a href="#solar">Solar</a>
+            <a href="#eolica">Eólica</a>
+            <a href="#hidreletrica">Hidrelétrica</a>
+            <a href="#biomassa">Biomassa</a>
+            <a href="#hidrogenio">Hidrogênio Verde</a>
+            <a href="#geotermica">Geotérmica</a>
+        </nav>
+        <h3>Energia limpa e Renovável: o Futuro da Energia</h3>
+        <h2>Tipos de energia limpa</h2>
+    </header>
 
-<nav>
-    <a href="#solar">Solar</a>
-    <a href="#eolica">Eólica</a>
-    <a href="#hidreletrica">Hidreletrica</a>
-    <a href="#biomassa">Biomassa</a>
-    <a href="#hidrogenio verde">Hidrogenio verde</a>
-    <a href="#geotermica">Geotérmica</a>
-</nav>
+    <main>
+        <div class="card" id="solar">
+            <h2>Energia solar</h2>
+            <h3>O que é energia solar?</h3>
+            <div class="card-content">
+                <p>A <b>energia solar</b> é uma fonte renovável e inesgotável gerada pela luz (fotovoltaica) ou calor (térmica) do sol. Através de painéis fotovoltaicos, converte a radiação em eletricidade, reduzindo a conta de luz em até 90%, sendo sustentável e de fácil manutenção, embora exija alto investimento inicial e seja intermitente.</p>
+                <img src="esolar.jpg" alt="Energia Solar">
+            </div>
+        </div>
 
-<h3>Energia limpa e Renovável: o Futuro da Energia</h3>
-<h2>Tipos de energia limpa </h2>
+        <div class="card" id="eolica">
+            <h2>Energia Eólica</h2> 
+            <h3>O que é energia Eólica?</h3>
+            <div class="card-content">
+                <p>A <b>energia eólica</b> é uma fonte renovável e limpa gerada pela força dos ventos, utilizando aerogeradores para converter energia cinética em eletricidade. Com baixo impacto ambiental, é a segunda maior fonte de geração no Brasil, concentrada no Nordeste, destacando-se como inesgotável e crucial para a transição energética.</p>
+                <img src="eolica.jpg" alt="Energia Eólica">
+            </div>
+        </div>
 
-<div class="card" id="solar">
-<h2>Energia solar</h2>
-    <div>
-    <h3>oq é energia solar.</h3>
+        <div class="card" id="hidreletrica">
+            <h2>Hidrelétrica</h2>
+            <h3>O que é Hidrelétrica?</h3>
+            <div class="card-content">
+                <p>A <b>usina Hidrelétrica</b> gera eletricidade renovável transformando a energia potencial da água (represa) em energia cinética (fluxo) e, finalmente, em energia mecânica e elétrica através de turbinas e geradores. No Brasil, é a principal fonte de energia, com destaque para a usina de Itaipu, respondendo por cerca de 67% da eletricidade do país.</p>
+                <img src="Hidreletrica.jpg" alt="Hidrelétrica">
+            </div>
+        </div>
 
-    <p> A <b>energia solar</b> é uma fonte renovável e inesgotável gerada pela luz (fotovoltaica) ou calor (térmica) do sol. Através de painéis fotovoltaicos, converte a radiação em eletricidade, reduzindo a conta de luz em até 90%, sendo sustentável e de fácil manutenção, embora exija alto investimento inicial e seja intermitente</p>
-        
-    <img src="esolar.jpg" alt="Energia Solar" width="104" height="142">
-    
-    </div>
-</div>
+        <div class="card" id="biomassa">
+            <h2>Biomassa</h2>
+            <h3>O que é biomassa?</h3>
+            <div class="card-content">
+                <p>A <b>biomassa</b> é toda matéria orgânica de origem vegetal ou animal utilizada para gerar energia (calor, eletricidade, biocombustíveis). Considerada uma fonte renovável e limpa, ela aproveita resíduos agrícolas (bagaço de cana), florestais (madeira), industriais e urbanos, com destaque para a cana-de-açúcar na produção de etanol e bioeletricidade no Brasil.</p>
+                <img src="biomassa.jpg" alt="Biomassa">
+            </div>
+        </div>
 
-<div class="card" id="eolica">
-<h5>Energia Eólica</h5> 
-    <div>
-<h3>oq é energia Eolica</h3>
+        <div class="card" id="hidrogenio">
+            <h2>Hidrogênio-verde</h2>
+            <h3>O que é Hidrogênio-verde?</h3>
+            <div class="card-content">
+                <p>O <b>Hidrogênio verde</b> é obtido pela eletrólise da água usando energia renovável (solar/eólica), separando hidrogênio e oxigênio sem emitir poluentes. É uma alternativa limpa aos combustíveis fósseis, com o Brasil posicionando-se como potencial líder global devido ao alto potencial de energias limpas e projetos no Nordeste.</p>
+                <img src="Hidrogenio verde.jpg" alt="Hidrogênio Verde">
+            </div>
+        </div>
 
-    </p>A energia eólica é uma fonte renovável e limpa gerada pela força dos ventos, utilizando aerogeradores para converter energia cinética em >eletricidade. Com baixo impacto ambiental, é a segunda maior fonte de geração no Brasil, concentrada no Nordeste, destacando-se como inesgotável e crucial para a transição energética.
-<img src="eolica.jpg" alt="Energia Eolica" width="104" height="142">
-</div>
-</div>
+        <div class="card" id="geotermica">
+            <h2>Geotérmica</h2>
+            <h3>O que é Geotérmica?</h3>
+            <div class="card-content">
+                <p>A <b>energia geotérmica</b> é uma fonte renovável e limpa obtida do calor interno da Terra, gerada pelo magma e decaimento radioativo no subsolo. Utilizada para gerar eletricidade (turbinas a vapor) ou aquecimento direto, é estável e inesgotável, mas com alto custo inicial. Islândia e EUA são líderes, enquanto o Brasil tem baixo potencial.</p>
+                <img src="Geotermica.jpg" alt="Geotérmica">
+            </div>
+        </div>
+    </main>
+     
+    <footer>ECOGuaíra - Energia para um Futuro sustentável</footer>
 
-<div class="card" id="Hidrelétrica">
-<p>Hidrelétrica</p>
-
-<h3>oq é Hidrelétrica</h3>
-<div>
-</p> usina Hidrelétrica gera eletricidade renovável transformando a energia potencial da água (represa) em energia cinética (fluxo) e, finalmente, em energia mecânica e elétrica através de turbinas e geradores. No Brasil, é a principal fonte de energia, com destaque para a usina de Itaipu, respondendo por cerca de 67% da eletricidade do país.
-</div>
-<img src="Hidreletrica.jpg" alt="W3Schools.com" width="104" height="142">
-</div>
-<div class="card" id="Biomassa">
-<p>Biomassa</p>
-<div>
-<h3>oq é biomassa</h3>
-</p> Biomassa é toda matéria orgânica de origem vegetal ou animal utilizada para gerar energia (calor, eletricidade, biocombustíveis). Considerada uma fonte renovável e limpa, ela aproveita resíduos agrícolas (bagaço de cana), florestais (madeira), industriais e urbanos, com destaque para a cana-de-açúcar na produção de etanol e bioeletricidade no Brasil.
-</div>
-<img src="biomassa.jpg" alt="W3Schools.com" width="104" height="142">
-
-</div>
-
-<div class="card" id="Hidrogênio">
-    <div>
-<p>Hidrogênio-verde</p>
-
-<h3>oq é Hidrogênio-verde</h3>
-<div>
-</p> O Hidrogênio verde (
-) é obtido pela eletrólise da água usando energia renovável (solar/eólica), separando hidrogênio e oxigênio sem emitir poluentes. É uma alternativa limpa aos combustíveis fósseis, com o Brasil posicionando-se como potencial líder global devido ao alto potencial de energias limpas e projetos no Nordeste.
-</div>
-<img src="Hidrogenio verde.jpg" alt="W3Schools.com" width="104" height="142">
-</div>
-
-<div class="card" id="Geotérmoca">
-<p>Geotérmica</p>
-</div>
-<h3>oq é Geotérmica</h3>
-<div>
-</p> A energia geotérmica é uma fonte renovável e limpa obtida do calor interno da Terra, gerada pelo magma e decaimento radioativo no subsolo. Utilizada para gerar eletricidade (turbinas a vapor) ou aquecimento direto, é estável e inesgotável, mas com alto custo inicial. Islândia e EUA são líderes, enquanto o Brasil tem baixo potencial.
-</div>
-<img src="Geotermica.jpg" alt="W3Schools.com" width="104" height="142">
-</div>
-  
-<footer>ECOGuaíra - Energia para um Futuro sustentavel </footer>
-</header>
 </body>
 </html>
